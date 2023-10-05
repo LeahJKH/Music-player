@@ -53,10 +53,12 @@ const soundsFiler = {
 };
 
 const soundField = document.querySelector("#sounds-magic");
-const btnImgs = document.getElementById("showbtnimg");
+const btnImgs = document.querySelector("#showbtnimg");
+const inputBtns = document.querySelector("#btn-inputs");
 
 soundsFiler.sounds.forEach((sound) => {
   const magicSound = btnCreate(sound.name);
+
   const btnAudio = new Audio(`${soundsFiler.folder}${sound.file}`);
   sound.audioElement = btnAudio;
 
@@ -64,8 +66,12 @@ soundsFiler.sounds.forEach((sound) => {
     playSound(btnAudio);
     showImg(sound.img);
   });
-
   soundField.append(magicSound);
+});
+
+soundsFiler.sounds.forEach((sound) => {
+  const inputButton = inputCreate(sound.key, sound.name);
+  inputBtns.append(inputButton);
 });
 
 document.addEventListener("keydown", (event) => {
@@ -89,6 +95,11 @@ function btnCreate(name) {
   const btnEl = document.createElement("button");
   btnEl.textContent = name;
   return btnEl;
+}
+function inputCreate(input, name) {
+  const pMaker = document.createElement("p");
+  pMaker.textContent = `${input}: ${name} `;
+  return pMaker;
 }
 
 function showImg(img) {
