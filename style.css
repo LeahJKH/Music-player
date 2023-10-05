@@ -1,0 +1,35 @@
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+}
+body {
+  background-color: grey;
+}
+button {
+  width: 120px;
+  height: 60px;
+  background-color: rgb(87, 86, 86);
+  border: none;
+  border-radius: 20px;
+  box-shadow: black 0 0 20px;
+  color: white;
+  margin: 20px 15px;
+}
+#main-h1 {
+  margin: 0 190px;
+  text-align: center;
+  font-size: 80px;
+}
+#showbtnimg {
+  position: absolute;
+  top: 32%;
+  left: 35%;
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+#sound-magic {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
