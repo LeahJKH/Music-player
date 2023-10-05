@@ -1,25 +1,33 @@
 * {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
     sans-serif;
+  color: #fff;
 }
+
 body {
-  background-color: grey;
+  background-color: #2086a8;
+  margin: 0;
+  padding: 0;
 }
+
 button {
   width: 120px;
   height: 60px;
-  background-color: rgb(87, 86, 86);
+  background-color: #39aebd;
   border: none;
   border-radius: 20px;
-  box-shadow: black 0 0 20px;
-  color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: 20px 15px;
+  cursor: pointer;
 }
+
 #main-h1 {
-  margin: 0 190px;
+  margin: 0;
   text-align: center;
   font-size: 80px;
+  text-decoration: underline solid #fff;
 }
+
 #showbtnimg {
   position: absolute;
   top: 32%;
@@ -28,8 +36,23 @@ button {
   height: 400px;
   display: none;
 }
-#sound-magic {
+
+#sounds-magic {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+}
+#btn-inputs {
+  width: 200px;
+  height: fit-content;
+  box-shadow: 0 0 20px rgb(35, 39, 40);
+  background-color: #336f82;
+  border-radius: 20px;
+  margin: 0 10px;
+  padding: 5px 15px;
 }
