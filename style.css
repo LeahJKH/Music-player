@@ -5,20 +5,28 @@
 }
 
 body {
-  background-color: #2086a8;
+  background-color: #2a2a2a;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  overflow: hidden;
 }
 
 button {
   width: 120px;
   height: 60px;
-  background-color: #39aebd;
+  background-color: #4c4f50;
   border: none;
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   margin: 20px 15px;
   cursor: pointer;
+}
+header {
+  background-color: #181818;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  padding-bottom: 15px;
 }
 
 #main-h1 {
@@ -51,7 +59,7 @@ h2 {
   width: 200px;
   height: fit-content;
   box-shadow: 0 0 20px rgb(35, 39, 40);
-  background-color: #336f82;
+  background-color: #4c4f50;
   border-radius: 20px;
   margin: 0 10px;
   padding: 5px 15px;
