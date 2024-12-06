@@ -37,18 +37,20 @@ header {
 }
 
 #showbtnimg {
-  position: absolute;
-  top: 32%;
-  left: 35%;
+  margin: auto;
   width: 400px;
   height: 400px;
   display: none;
+  grid-column: 2/3;
+  grid-row: 3/5;
 }
 
 #sounds-magic {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
+  grid-row: 1/2;
+  grid-column: 2/5;
 }
 
 h2 {
@@ -56,11 +58,16 @@ h2 {
   font-size: 24px;
 }
 #btn-inputs {
-  width: 200px;
-  height: fit-content;
-  box-shadow: 0 0 20px rgb(35, 39, 40);
   background-color: #4c4f50;
-  border-radius: 20px;
-  margin: 0 10px;
+  border-radius:0 20px 0 0;
   padding: 5px 15px;
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+#gridify {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  gap: 17px;
+
 }
