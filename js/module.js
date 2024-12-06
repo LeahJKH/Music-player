@@ -57,6 +57,13 @@ export const soundsFiler = {
         img: "AHHH.webp",
         alt: "picture of a woman falling"
       },
+      {
+        file: "fortnite-death.mp3",
+        name: "fortnite",
+        key: "a",
+        img: "fortnite-death.webp",
+        alt: "picture of a fortnite character dying"
+      }
     ],
   };
   
